@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class Controller {
-
     Converter converter = new Converter();
     @GetMapping("/")
     String hello() {
@@ -23,6 +22,5 @@ public class Controller {
     double m(@PathVariable double m) {
         return converter.convertYardToMeter(m);
     }
-
 
 }
